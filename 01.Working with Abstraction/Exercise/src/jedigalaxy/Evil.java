@@ -1,4 +1,4 @@
-package JediGalaxy;
+package jedigalaxy;
 
 public class Evil {
     private final Galaxy galaxy;

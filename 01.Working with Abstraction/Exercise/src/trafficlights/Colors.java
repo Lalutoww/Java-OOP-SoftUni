@@ -1,4 +1,4 @@
-package TrafficLights;
+package trafficlights;
 
 public enum Colors {
     RED,

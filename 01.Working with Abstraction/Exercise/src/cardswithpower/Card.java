@@ -1,4 +1,4 @@
-package CardsWithPower;
+package cardswithpower;
 
 public class Card {
     private final int power;

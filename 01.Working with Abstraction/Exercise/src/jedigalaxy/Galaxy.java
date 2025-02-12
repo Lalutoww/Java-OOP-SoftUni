@@ -1,4 +1,4 @@
-package JediGalaxy;
+package jedigalaxy;
 
 public class Galaxy {
     private final int row;

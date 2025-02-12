@@ -1,4 +1,4 @@
-package JediGalaxy;
+package jedigalaxy;
 
 public class Jedi {
     private static long starsCollected;

@@ -1,4 +1,4 @@
-package CardRank;
+package cardrank;
 
 public enum CardRank {
     ACE,
