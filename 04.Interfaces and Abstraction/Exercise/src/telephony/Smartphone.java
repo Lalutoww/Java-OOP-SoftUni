@@ -21,7 +21,7 @@ public class Smartphone implements Callable, Browsable {
                 sb.append("Invalid URL!").append(System.lineSeparator());
             }
         }
-        
+
         return sb.toString().trim();
     }
 
