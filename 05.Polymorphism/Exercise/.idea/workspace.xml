@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75621167-d4b2-41ed-be6d-23ece9cf8871" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vehicles/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vehicles/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vehicles/Truck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vehicles/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vehicleextension/Bus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vehicleextension/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vehicleextension/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vehicleextension/Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vehicleextension/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,21 +28,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Lalutoww"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Lalutoww&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Lalutoww/Java-OOP-SoftUni.git",
-    "accountId": "6bab68a5-9ee5-4914-bf85-7b0201ad5884"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Lalutoww/Java-OOP-SoftUni.git&quot;,
+    &quot;accountId&quot;: &quot;6bab68a5-9ee5-4914-bf85-7b0201ad5884&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2tIKXWLhhzybkEzQA2erkIH4ozq" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -62,6 +60,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/lalutoww/Documents/SoftUni/Java-OOP/05.Polymorphism/Exercise/src/vehicleextension",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,6 +70,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/vehicleextension" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,7 +92,9 @@
       <option name="presentableId" value="Default" />
       <updated>1732209531356</updated>
       <workItem from="1732209532515" duration="52000" />
-      <workItem from="1740034191068" duration="3688000" />
+      <workItem from="1740034191068" duration="3775000" />
+      <workItem from="1740066323441" duration="11000" />
+      <workItem from="1740066338510" duration="2468000" />
     </task>
     <servers />
   </component>

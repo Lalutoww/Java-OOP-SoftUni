@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86d169a6-d472-49e7-bf93-7a9cfb32dd9b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/wildfarm/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wildfarm/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wildfarm/Felime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wildfarm/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wildfarm/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wildfarm/Mammal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wildfarm/Meat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wildfarm/Mouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wildfarm/Tiger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wildfarm/Vegetable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wildfarm/Zebra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +81,7 @@
       <workItem from="1732209532515" duration="52000" />
       <workItem from="1739944718142" duration="1606000" />
       <workItem from="1739997900436" duration="1953000" />
+      <workItem from="1740066318498" duration="4000" />
     </task>
     <servers />
   </component>
