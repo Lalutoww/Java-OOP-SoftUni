@@ -11,8 +11,7 @@ public class Truck extends Vehicle {
 
     @Override
     public void refuel(double liters) {
-        double actualFuelAdded = liters * REFUEL_EFFICIENCY;
-        fuelQuantity += actualFuelAdded;
+        super.refuel(liters * REFUEL_EFFICIENCY);
     }
 
 

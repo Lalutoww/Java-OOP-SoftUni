@@ -3,8 +3,8 @@ package vehicles;
 import java.text.DecimalFormat;
 
 public abstract class Vehicle {
-    protected final double litersPerKm;
-    protected double fuelQuantity;
+    private final double litersPerKm;
+    private double fuelQuantity;
 
     public Vehicle(double fuelQuantity, double litersPerKm) {
         this.fuelQuantity = fuelQuantity;
@@ -13,10 +13,11 @@ public abstract class Vehicle {
 
     public void drive(double kilometers) {
         double requiredFuel = kilometers * litersPerKm;
+
         String type = this.getClass().getSimpleName();
 
-        if (requiredFuel <= fuelQuantity) {
-            fuelQuantity -= requiredFuel;
+        if (requiredFuel <= this.fuelQuantity) {
+            this.fuelQuantity -= requiredFuel;
             DecimalFormat df = new DecimalFormat("0.##");
             System.out.println(type + " traveled " + df.format(kilometers) + " km");
         } else {
