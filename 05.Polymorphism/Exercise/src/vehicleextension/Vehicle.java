@@ -3,9 +3,9 @@ package vehicleextension;
 import java.text.DecimalFormat;
 
 public abstract class Vehicle {
-    protected final double litersPerKm;
-    protected final double tankCapacity;
-    protected double fuelQuantity;
+    private final double litersPerKm;
+    private final double tankCapacity;
+    private double fuelQuantity;
 
     public Vehicle(double fuelQuantity, double litersPerKm, double tankCapacity) {
         this.setFuelQuantity(fuelQuantity);
@@ -15,6 +15,7 @@ public abstract class Vehicle {
 
     public void drive(double kilometers) {
         double requiredFuel = kilometers * litersPerKm;
+
         String type = this.getClass().getSimpleName();
 
         if (requiredFuel <= fuelQuantity) {
@@ -27,10 +28,14 @@ public abstract class Vehicle {
     }
 
     public void refuel(double liters) {
-        if (fuelQuantity + liters > tankCapacity) {
+        if (this.fuelQuantity + liters > this.tankCapacity) {
             throw new IllegalArgumentException("Cannot fit fuel in tank");
         }
         this.setFuelQuantity(liters);
+    }
+
+    public double getFuelQuantity() {
+        return fuelQuantity;
     }
 
     public void setFuelQuantity(double fuelQuantity) {
@@ -38,10 +43,6 @@ public abstract class Vehicle {
             throw new IllegalArgumentException("Fuel must be a positive number");
         }
         this.fuelQuantity += fuelQuantity;
-    }
-
-    public double getFuelQuantity() {
-        return fuelQuantity;
     }
 
     @Override

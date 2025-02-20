@@ -8,15 +8,8 @@ public class Truck extends Vehicle {
         super(fuelQuantity, litersPerKm + SUMMER_CONSUMPTION_INCREASE, tankCapacity);
     }
 
-
     @Override
     public void refuel(double liters) {
-        double actualFuelAdded = liters * REFUEL_EFFICIENCY;
-        if (super.getFuelQuantity() + actualFuelAdded > tankCapacity) {
-            throw new IllegalArgumentException("Cannot fit fuel in tank");
-        }
-        super.setFuelQuantity(actualFuelAdded);
+        super.refuel(liters * REFUEL_EFFICIENCY);
     }
-
-
 }
