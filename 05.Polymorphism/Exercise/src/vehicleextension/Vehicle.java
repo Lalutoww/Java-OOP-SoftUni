@@ -21,7 +21,7 @@ public abstract class Vehicle {
         if (requiredFuel <= fuelQuantity) {
             fuelQuantity -= requiredFuel;
             DecimalFormat df = new DecimalFormat("0.##");
-            System.out.println(type + " traveled " + df.format(kilometers) + " km");
+            System.out.println(type + " travelled " + df.format(kilometers) + " km");
         } else {
             System.out.println(type + " needs refueling");
         }
@@ -34,10 +34,6 @@ public abstract class Vehicle {
         this.setFuelQuantity(liters);
     }
 
-    public double getFuelQuantity() {
-        return fuelQuantity;
-    }
-
     public void setFuelQuantity(double fuelQuantity) {
         if (fuelQuantity <= 0) {
             throw new IllegalArgumentException("Fuel must be a positive number");
@@ -47,7 +43,6 @@ public abstract class Vehicle {
 
     @Override
     public String toString() {
-        DecimalFormat df = new DecimalFormat("0.00");
-        return this.getClass().getSimpleName() + ": " + df.format(fuelQuantity);
+        return String.format("%s: %.2f", this.getClass().getSimpleName(), this.fuelQuantity);
     }
 }

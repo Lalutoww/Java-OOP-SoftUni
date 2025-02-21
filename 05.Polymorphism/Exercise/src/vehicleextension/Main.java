@@ -46,9 +46,9 @@ public class Main {
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
-            System.out.println(car);
-            System.out.println(truck);
-            System.out.println(bus);
         }
+        System.out.println(car);
+        System.out.println(truck);
+        System.out.println(bus);
     }
 }

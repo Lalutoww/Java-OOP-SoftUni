@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="75621167-d4b2-41ed-be6d-23ece9cf8871" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vehicles/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vehicles/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vehicleextension/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vehicleextension/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vehicleextension/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vehicleextension/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,7 @@
       <workItem from="1740066323441" duration="11000" />
       <workItem from="1740066338510" duration="2883000" />
       <workItem from="1740073546973" duration="3064000" />
-      <workItem from="1740125171128" duration="728000" />
+      <workItem from="1740125171128" duration="1362000" />
     </task>
     <servers />
   </component>
@@ -105,6 +106,11 @@
           <url>file://$PROJECT_DIR$/src/vehicleextension/Main.java</url>
           <line>25</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/vehicleextension/Main.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
