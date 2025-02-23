@@ -31,17 +31,14 @@ public class Main {
 
             try {
                 switch (command) {
-                    case "Drive":
-                        vehicle.drive(Double.parseDouble(input[2]));
-                        break;
-                    case "Refuel":
-                        vehicle.refuel(Double.parseDouble(input[2]));
-                        break;
-                    case "DriveEmpty": {
+                    case "Drive" -> vehicle.drive(Double.parseDouble(input[2]));
+                    case "Refuel" -> vehicle.refuel(Double.parseDouble(input[2]));
+                    case "DriveEmpty" -> {
                         if (vehicle instanceof Bus) {
                             ((Bus) vehicle).driveEmpty(Double.parseDouble(input[2]));
                         }
                     }
+                    default -> throw new IllegalStateException("Unexpected value: " + command);
                 }
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());

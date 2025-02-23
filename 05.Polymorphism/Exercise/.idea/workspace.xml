@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75621167-d4b2-41ed-be6d-23ece9cf8871" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/word/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/word/CommandImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/word/CommandInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/word/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/word/TextTransform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vehicleextension/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vehicleextension/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vehicleextension/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vehicleextension/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -99,26 +97,24 @@
       <workItem from="1740066338510" duration="2883000" />
       <workItem from="1740073546973" duration="3064000" />
       <workItem from="1740125171128" duration="2563000" />
+      <workItem from="1740225322535" duration="14000" />
+      <workItem from="1740225921219" duration="474000" />
+      <workItem from="1740226762331" duration="6000" />
+      <workItem from="1740226904793" duration="67000" />
+      <workItem from="1740227823307" duration="55000" />
+      <workItem from="1740227889162" duration="304000" />
+      <workItem from="1740228200084" duration="564000" />
+      <workItem from="1740228772310" duration="285000" />
+      <workItem from="1740229065458" duration="237000" />
+      <workItem from="1740229310113" duration="256000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/vehicleextension/Main.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/vehicleextension/Main.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
