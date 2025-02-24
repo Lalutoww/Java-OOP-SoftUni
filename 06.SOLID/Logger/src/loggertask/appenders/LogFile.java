@@ -10,8 +10,8 @@ import java.nio.file.StandardOpenOption;
 public class LogFile implements File {
     private static final String DEFAULT_FILE_NAME = "default.txt";
 
-    private StringBuilder text;
-    private String fileName;
+    private final StringBuilder text;
+    private final String fileName;
     private int size;
 
     public LogFile() {
@@ -30,7 +30,7 @@ public class LogFile implements File {
             Files.write(Paths.get(this.fileName), text.getBytes(), StandardOpenOption.APPEND);
             return true;
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("No file found!");
         }
         return false;
     }
@@ -52,7 +52,8 @@ public class LogFile implements File {
         this.size = 0;
 
         for (Character character : text.toString().toCharArray()) {
-            size += character;
+            if (Character.isAlphabetic(character))
+                size += character;
         }
 
         return this.size;
