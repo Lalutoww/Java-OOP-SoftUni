@@ -1,6 +1,6 @@
 import java.lang.reflect.InvocationTargetException;
 
-public class Main {
+public class ReflectionTask {
     public static void main(String[] args) throws InvocationTargetException, InstantiationException, IllegalAccessException {
         Class<Reflection> clazz = Reflection.class;
 
