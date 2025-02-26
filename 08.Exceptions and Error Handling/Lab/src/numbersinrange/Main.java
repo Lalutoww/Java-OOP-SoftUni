@@ -1,41 +1,43 @@
 package numbersinrange;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Main {
+    private static final int END = 100;
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        while (true) {
-            try {
-                int start = Integer.parseInt(sc.nextLine());
-                int end = Integer.parseInt(sc.nextLine());
+        List<Integer> numbersInRange = new ArrayList<>();
 
-                printRange(start, end);
-                break;
+
+        int currentNumber = 1;
+
+        while (numbersInRange.size() < 10) {
+            try {
+                currentNumber = readNumber(currentNumber, Integer.parseInt(sc.nextLine()));
+                numbersInRange.add(currentNumber);
             } catch (NumberFormatException e) {
-                System.out.println("Input should consist of numbers");
-            } catch (IllegalArgumentException e) {
+                System.out.println("Invalid Number!");
+            } catch (IllegalDiapasonException e) {
                 System.out.println(e.getMessage());
             }
         }
+
+        System.out.println(numbersInRange.stream()
+                .map(String::valueOf)
+                .collect(Collectors.joining(", ")));
     }
 
-    private static void printRange(int start, int end) {
-        try {
-            checkIfValid(start, end);
-            for (int i = start; i <= end; i++) {
-                System.out.println(i);
-            }
-        } catch (IllegalDiapasonException e) {
-            throw new IllegalArgumentException(e.getMessage());
-        }
-    }
 
-    private static void checkIfValid(int start, int end) throws IllegalDiapasonException {
-        if (start <= 1 || start >= end || end >= 100) {
-            throw new IllegalDiapasonException("Numbers should be in the diapason: 1 < start < end < 100.");
+    private static int readNumber(int lastNumber, int newNumber) throws IllegalDiapasonException {
+        if (lastNumber >= newNumber || newNumber >= END) {
+            throw new IllegalDiapasonException(String.format("Your number is not in range %d - 100!", lastNumber));
         }
+        return newNumber;
     }
 
     private static class IllegalDiapasonException extends Exception {
