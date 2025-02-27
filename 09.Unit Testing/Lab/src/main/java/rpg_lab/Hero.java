@@ -3,8 +3,8 @@ package rpg_lab;
 public class Hero implements Comparable<Hero> {
 
     private final String name;
-    private int experience;
     private final Weapon weapon;
+    private int experience;
 
     public Hero(String name, Weapon weapon) {
         this.name = name;
@@ -20,7 +20,6 @@ public class Hero implements Comparable<Hero> {
         return this.experience;
     }
 
-    // Package private so it can be called in tests
     void setExperience(int experience) {
         this.experience = experience;
     }
