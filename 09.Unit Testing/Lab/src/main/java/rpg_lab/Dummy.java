@@ -3,7 +3,7 @@ package rpg_lab;
 public class Dummy implements Target {
 
     private int health;
-    private int experience;
+    private final int experience;
 
     public Dummy(int health, int experience) {
         this.health = health;
