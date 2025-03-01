@@ -57,6 +57,6 @@ class DatabaseTest {
     @Test
     void testRemove() throws OperationNotSupportedException {
         database.remove();
-        assertArrayEquals(new Integer[]{1,2,3}, database.getElements());
+        assertArrayEquals(new Integer[]{1, 2, 3}, database.getElements());
     }
 }
