@@ -1,7 +1,6 @@
 //created by J.M.
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Instock implements ProductStock {
     private Map<String, Product> products;
@@ -59,27 +58,34 @@ public class Instock implements ProductStock {
 
         return products.values().stream()
                 .sorted(Comparator.comparing(Product::getLabel))
-                .limit(count).collect(Collectors.toList());
+                .limit(count).toList();
     }
 
     @Override
     public Iterable<Product> findAllInRange(double lo, double hi) {
-        return null;
+        return products.values().stream().filter(p -> p.getPrice() > lo && p.getPrice() <= hi).sorted(Comparator.comparing(Product::getLabel).reversed()).toList();
     }
 
     @Override
     public Iterable<Product> findAllByPrice(double price) {
-        return null;
+        return products.values().stream().filter(p -> p.getPrice() == price).toList();
     }
 
     @Override
     public Iterable<Product> findFirstMostExpensiveProducts(int count) {
-        return null;
+        if (count > products.size() || count <= 0) {
+            throw new IllegalArgumentException();
+        }
+
+        return products.values().stream()
+                .sorted(Comparator.comparing(Product::getPrice).reversed())
+                .limit(count)
+                .toList();
     }
 
     @Override
     public Iterable<Product> findAllByQuantity(int quantity) {
-        return null;
+        return products.values().stream().filter(p -> p.getQuantity() == quantity).toList();
     }
 
     @Override

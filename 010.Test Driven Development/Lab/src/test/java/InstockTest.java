@@ -17,13 +17,21 @@ class InstockTest {
     }
 
     private Product[] prepareProducts() {
-        Product[] products = new Product[5];
-        products[0] = new Product("Airqn", 2.00, 10);
-        products[1] = new Product("Burger", 13.50, 5);
-        products[2] = new Product("Kashkaval", 3.70, 22);
-        products[3] = new Product("Hlqb", 2.99, 30);
-        products[4] = new Product("Sirene", 7.56, 15);
-        return products;
+        return new Product[]{new Product("test_product_one", 2.00, 10),
+                new Product("test_product_two", 13.50, 10),
+                new Product("test_product_three", 3.70, 22),
+                new Product("test_product_four", 2.99, 30),
+                new Product("test_product_five", 7.56, 15),
+                new Product("test_product_six", 2.00, 7)};
+    }
+
+    private void addProductsInStock() {
+        stock.add(products[0]);
+        stock.add(products[1]);
+        stock.add(products[2]);
+        stock.add(products[3]);
+        stock.add(products[4]);
+        stock.add(products[5]);
     }
 
     private List<Product> PutIterItemsInList(Iterable<Product> iterable) {
@@ -52,9 +60,7 @@ class InstockTest {
 
     @Test
     void testFindReturnsTheCorrectProduct() {
-        stock.add(products[0]);
-        stock.add(products[1]);
-        stock.add(products[2]);
+        addProductsInStock();
 
         assertEquals(products[0], stock.find(0));
         assertEquals(products[1], stock.find(1));
@@ -63,9 +69,7 @@ class InstockTest {
 
     @Test
     void testFindThrowsExceptionWhenGivenInvalidIndex() {
-        stock.add(products[0]);
-
-        assertThrows(IndexOutOfBoundsException.class, () -> stock.find(1));
+        assertThrows(IndexOutOfBoundsException.class, () -> stock.find(0));
     }
 
     @Test
@@ -74,7 +78,7 @@ class InstockTest {
         assertEquals(10, stock.find(0).getQuantity());
 
 
-        stock.changeQuantity("Airqn", 2);
+        stock.changeQuantity("test_product_one", 2);
         assertEquals(2, stock.find(0).getQuantity());
     }
 
@@ -88,8 +92,8 @@ class InstockTest {
         stock.add(products[0]);
         stock.add(products[1]);
 
-        assertEquals(products[0], stock.findByLabel("Airqn"));
-        assertEquals(products[1], stock.findByLabel("Burger"));
+        assertEquals(products[0], stock.findByLabel("test_product_one"));
+        assertEquals(products[1], stock.findByLabel("test_product_two"));
     }
 
     @Test
@@ -99,13 +103,10 @@ class InstockTest {
 
     @Test
     void testFindFirstByAlphabeticalOrderReturnsNthElementsSorted() {
-        stock.add(products[0]);
-        stock.add(products[1]);
-        stock.add(products[2]);
-        stock.add(products[3]);
+        addProductsInStock();
 
         List<Product> result = PutIterItemsInList(stock.findFirstByAlphabeticalOrder(3));
-        Product[] expectedResult = {products[0], products[1], products[3]};
+        Product[] expectedResult = {products[4], products[3], products[0]};
 
         assertArrayEquals(expectedResult, result.toArray(new Product[0]));
     }
@@ -113,6 +114,72 @@ class InstockTest {
     @Test
     void testFindFirstByAlphabeticalOrderReturnsEmptyCollectionIfCountIsOutOfBounds() {
         List<Product> result = PutIterItemsInList(stock.findFirstByAlphabeticalOrder(3));
+        assertArrayEquals(new Product[0], result.toArray(new Product[0]));
+    }
+
+    @Test
+    void testFindAllInRangeReturnsAllProductsWithinPriceRangeSortedInDescendingOrder() {
+        addProductsInStock();
+
+        List<Product> result = PutIterItemsInList(stock.findAllInRange(2.00, 3.70));
+        Product[] expectedArr = new Product[]{products[2], products[3]};
+
+        assertArrayEquals(expectedArr, result.toArray(new Product[0]));
+    }
+
+    @Test
+    void testFindAllInRangeReturnsEmptyCollectionIfNoSuchProductsExist() {
+        List<Product> result = PutIterItemsInList(stock.findAllInRange(15, 19.70));
+        assertArrayEquals(new Product[0], result.toArray(new Product[0]));
+    }
+
+    @Test
+    void testFindAllByPriceReturnsAllProductsInStockWithGivenPrice() {
+        addProductsInStock();
+
+        List<Product> result = PutIterItemsInList(stock.findAllByPrice(2.00));
+        Product[] expectedArr = new Product[]{products[0], products[5]};
+
+        assertArrayEquals(expectedArr, result.toArray(new Product[0]));
+    }
+
+    @Test
+    void testFindAllByPriceReturnsEmptyCollectionIfNoProductsWereFound() {
+        List<Product> result = PutIterItemsInList(stock.findAllByPrice(2.00));
+
+        assertArrayEquals(new Product[0], result.toArray(new Product[0]));
+    }
+
+    @Test
+    void findFirstMostExpensiveProductsReturnsTheFirstNProductsWithHighestPrice() {
+        addProductsInStock();
+
+        List<Product> result = PutIterItemsInList(stock.findFirstMostExpensiveProducts(3));
+        Product[] expectedArr = new Product[]{products[1], products[4], products[2]};
+
+        assertArrayEquals(expectedArr, result.toArray(new Product[0]));
+    }
+
+    @Test
+    void findFirstMostExpensiveProductsThrowsExceptionIfArgumentsIsMoreThanTheExistingProducts() {
+        int totalElementsInStock = stock.getCount();
+        assertThrows(IllegalArgumentException.class, () -> stock.findFirstMostExpensiveProducts(totalElementsInStock + 1));
+    }
+
+    @Test
+    void testFindAllByQuantityReturnsAllProductsInStockWithGivenQuantity() {
+        addProductsInStock();
+
+        List<Product> result = PutIterItemsInList(stock.findAllByQuantity(10));
+        Product[] expectedArr = new Product[]{products[0], products[1]};
+
+        assertArrayEquals(expectedArr, result.toArray(new Product[0]));
+    }
+
+    @Test
+    void testFindAllByQuantityReturnsEmptyCollectionIfNoProductsWereFound() {
+        List<Product> result = PutIterItemsInList(stock.findAllByQuantity(99));
+
         assertArrayEquals(new Product[0], result.toArray(new Product[0]));
     }
 }
