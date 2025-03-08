@@ -1,4 +1,4 @@
-package singleton;
+package creational.singleton;
 
 public class Singleton {
     //The instance of the class that will be accessed from other classes
