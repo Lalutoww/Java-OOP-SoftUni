@@ -1,4 +1,4 @@
-package behavioral.commad;
+package behavioral.command;
 
 public class Lamp {
     public void TurnOn() {

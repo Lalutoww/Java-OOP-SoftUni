@@ -1,8 +1,8 @@
-package behavioral.commad;
+package behavioral.command;
 
-import behavioral.commad.commands.Command;
-import behavioral.commad.commands.TurnOffLights;
-import behavioral.commad.commands.TurnOnLights;
+import behavioral.command.commands.Command;
+import behavioral.command.commands.TurnOffLights;
+import behavioral.command.commands.TurnOnLights;
 
 public class Main {
     public static void main(String[] args) {

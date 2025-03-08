@@ -1,6 +1,6 @@
-package behavioral.commad;
+package behavioral.command;
 
-import behavioral.commad.commands.Command;
+import behavioral.command.commands.Command;
 
 public class Controller {
     private Command command;

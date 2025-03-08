@@ -1,6 +1,6 @@
-package behavioral.commad.commands;
+package behavioral.command.commands;
 
-import behavioral.commad.Lamp;
+import behavioral.command.Lamp;
 
 public class TurnOffLights implements Command {
     private Lamp lamp;
