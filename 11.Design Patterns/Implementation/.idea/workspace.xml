@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04e2bdd2-b581-41b0-80bd-2311e2809eea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/behavioral/strategy/DifficultyLevelStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/behavioral/strategy/EasyLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/behavioral/strategy/HardLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/behavioral/strategy/MediumLevel.java" afterDir="false" />
-    </list>
+    <list default="true" id="04e2bdd2-b581-41b0-80bd-2311e2809eea" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732209531356</updated>
       <workItem from="1732209532515" duration="52000" />
-      <workItem from="1741444336148" duration="4426000" />
+      <workItem from="1741444336148" duration="4616000" />
     </task>
     <servers />
   </component>
