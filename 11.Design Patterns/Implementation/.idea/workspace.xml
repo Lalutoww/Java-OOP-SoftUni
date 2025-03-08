@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04e2bdd2-b581-41b0-80bd-2311e2809eea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/behavioral/observer/Investor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/behavioral/observer/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/behavioral/observer/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/behavioral/observer/StockMarket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/behavioral/observer/StockMarketImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/behavioral/observer/StockObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/behavioral/template/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/behavioral/template/OnlineOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/behavioral/template/PhoneOrderTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/behavioral/template/StoreOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732209531356</updated>
       <workItem from="1732209532515" duration="52000" />
-      <workItem from="1741444336148" duration="3435000" />
+      <workItem from="1741444336148" duration="4262000" />
     </task>
     <servers />
   </component>
