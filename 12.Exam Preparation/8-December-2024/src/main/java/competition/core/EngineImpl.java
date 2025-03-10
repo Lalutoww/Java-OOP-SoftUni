@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class EngineImpl implements Engine{
+public class EngineImpl implements Engine {
 
     private Controller controller;
     private BufferedReader reader;
@@ -65,22 +65,18 @@ public class EngineImpl implements Engine{
     }
 
     private String addCar(String[] data) {
-        //TODO
-        return null;
+        return controller.addCar(data[0], data[1], data[2]);
     }
 
     private String addDestination(String[] data) {
-        //TODO
-        return null;
+        return controller.addDestination(data[0], data[1]);
     }
 
     private String reachDestination(String[] data) {
-        //TODO
-        return null;
+        return controller.reachDestination(data[0]);
     }
 
     private String getStatistics() {
-        //TODO
-        return null;
+        return controller.getStatistics();
     }
 }
